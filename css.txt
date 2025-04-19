@@ -1,0 +1,155 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard Variable', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #111;
+}
+
+header p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* ---------- Main ---------- */
+main {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 소개 섹션 */
+.intro {
+  margin-bottom: 60px;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  white-space: pre-line;
+  text-align: left;
+}
+
+/* 친구 섹션 */
+.friends h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.friends img {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 친구 카드 레이아웃 */
+.friend-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* 개별 카드 */
+.friend-card {
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.friend-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.friend-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.friend-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.friend-card a {
+  text-decoration: none;
+  color: #222;
+}
+
+.friend-card a:hover {
+  color: #0077cc;
+}
+
+/* 포챠코 색상 */
+.friend-card.pochacco {
+  background-color: #fffce6;
+  border: 1px solid #ffef99;
+}
+
+/* 마이멜로디 색상 */
+.friend-card.melody {
+  background-color: #fff0f5;
+  border: 1px solid #f7cce5;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #eaeaea;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 40px;
+}
